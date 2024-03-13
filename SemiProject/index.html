@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Product Management</h1>
+    </div>
+
+    <div class="container">
+        <button onclick="showCreateProductForm()" id="add-product-button" class="product-create-button">Create Product</button>
+
+        <div class="content">
+            <!---Product List-->
+        </div>
+    </div>
+
+    <div class="create-form">
+        <form onsubmit="handleAddProduct(event)">
+            <div>
+              Name:
+              <input
+                id="product-name"
+                type="text"
+                placeholder="enter product name"
+              />
+            </div>
+            <div>
+              Type:
+              <input
+                id="product-type"
+                type="text"
+                placeholder="enter product type"
+              />
+            </div>
+            <div>
+              Price:
+              <input id="product-price" type="number" placeholder="enter price" />
+            </div>
+            <div>
+              Image:
+              <input id="product-image" type="text" placeholder="enter image url" />
+            </div>
+            <div>
+              Is Used:
+              <input id="is-used" type="checkbox" placeholder="Does it exists?" />
+            </div>
+            <div>
+              Count In Stock:
+              <input
+                id="count-in-stock"
+                type="number"
+                placeholder="Enter number of stock  available"
+              />
+            </div>
+            <div>
+              Discount (%):
+              <input id="discount" type="number" placeholder="Enter number discount />
+            </div>
+            <div class="produc-form-actions">
+              <button onclick="handleCancelAdd()">Cancel</button>
+              <button onclick="handleAddProduct()">Create</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="edit-form">
+        <h2>Edit Product</h2>
+        <form onsubmit="handleEditProduct(event)">
+            <div class="edit-form-box">
+              Name:
+              <input
+                id="edit-product-name"
+                type="text"
+                placeholder="enter product name"
+              />
+            </div>
+            <div class="edit-form-box">
+              Type:
+              <input
+                id="edit-product-type"
+                type="text"
+                placeholder="enter product type"
+              />
+            </div>
+            <div class="edit-form-box">
+              Price:
+              <input id="edit-product-price" type="number" placeholder="enter price" />
+            </div>
+            <div class="edit-form-box">
+              Image:
+              <input id="edit-product-image" type="text" placeholder="enter image url" />
+            </div>
+            <div class="edit-form-box">
+              Is Used:
+              <input id="edit-is-used" type="checkbox" placeholder="Does it exists?" />
+            </div>
+            <div class="edit-form-box">
+              Count In Stock:
+              <input
+                id="edit-count-in-stock"
+                type="number"
+                placeholder="Enter number of stock  available"
+              />
+            </div>
+            <div class="edit-form-box">
+              Discount (%):
+              <input id="edit-discount" type="number" placeholder="Enter number discount />
+            </div>
+
+            <div class="produc-form-actions">
+              <button onclick="handleCancelEdit()" class="edit-form-button">Cancel</button>
+              <button onclick="handleEditProduct()" class="edit-form-button">Edit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="detail-modal">
+        <!---Product Details-->
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

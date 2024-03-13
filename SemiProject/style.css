@@ -1,0 +1,118 @@
+.create-form, 
+.edit-form{
+    display: none;
+}
+
+.product-card{
+    border: 2.5px solid rgb(128, 151, 167);
+    width: 250px;
+    padding: 15px;
+    background-color: rgb(238, 235, 228);
+    gap: 25px;
+}
+
+.product-image{
+    height: 200px;
+    width: 100%;
+}
+
+.product-index{
+    text-align: center;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-icon{
+    background-color: rgb(128, 151, 167);
+    color: rgb(14, 10, 1);
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.button-icon:hover{
+    background-color: rgb(14, 10, 1);
+    color: rgb(128, 151, 167);
+}
+
+.edit-form-button{
+    background-color: rgb(128, 151, 167);
+    color: rgb(14, 10, 1);
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.edit-form-button:hover{
+    background-color: rgb(14, 10, 1);
+    color: rgb(128, 151, 167);
+}
+
+.edit-form{
+    border: 4px solid rgb(128, 151, 167);
+    width: 380px;
+    padding: 10px;
+    background-color: rgb(238, 235, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.detail-modal{
+    border: 1px solid rgb(128, 151, 167);
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(238, 235, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+}
+
+.product-detail .product-image{
+    height: 200px;
+    width: 60%;
+}
+
+.header{
+    color: rgb(14, 10, 1);
+    align-items: center !important;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.product-create-button{
+    background-color: rgb(128, 151, 167);
+    color: rgb(14, 10, 1);
+    border-radius: 20px;
+    gap: 10px;
+    width: 100px;
+    margin: 10px;
+    height: 40px;
+}
+
+.product-create-button:hover{
+    background-color: rgb(14, 10, 1);
+    color: rgb(128, 151, 167);
+}
+
+.close-modal{
+    background-color: rgb(128, 151, 167);
+    color: rgb(14, 10, 1);
+    border-radius: 20px;
+    gap: 10px;
+    width: 100px;
+    margin: 10px;
+    height: 40px;
+}
+
+.close-modal:hover{
+    background-color: rgb(14, 10, 1);
+    color: rgb(128, 151, 167);
+}
